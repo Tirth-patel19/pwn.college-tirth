@@ -144,3 +144,21 @@ I learnt about steganography.
 ### Reference
 https://github.com/djrobin17/image-stego-tool/blob/master/stego.py  
 https://medium.com/swlh/lsb-image-steganography-using-python-2bbbee2c69a2
+
+
+## Disk, disk, sleuth! II
+
+### solve
+
+**Flag:** `picoCTF{f0r3ns1c4t0r_n0v1c3_f5565e7b}`
+
+<img width="1158" height="938" alt="image" src="https://github.com/user-attachments/assets/6094113a-d64a-445d-96f8-4df2cda6d0b9" />
+
+In order to solve this question i examined the image using the sluethkit at first I opened it in using mmls to view all the partitions in the image there in the linux part i found the offset value as 2048 then i used the fls to list the file names in the image and there i found the root file then with hit and trial i set the inode to 18290 and then I got the info about 18291 then i used the icat function to show the content of the file at inode 18291 from there i found the flag in the picture fromat and solved the question.
+
+### New Learning
+Learnt about the function of the sluethkit and also about the autopsy.
+### Reference
+https://picoctf.org/resources.html  
+
+
